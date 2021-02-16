@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ArticleRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -23,20 +25,25 @@ class Article
     private $title;
 
     /**
-     * @ORM\ManyToOne(targetEntity=theme::class, inversedBy="articles")
+     * @ORM\ManyToOne(targetEntity=Theme::class, inversedBy="articles")
      * @ORM\JoinColumn(nullable=false)
      */
     private $theme;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\OneToMany(targetEntity=Photo::class, mappedBy="article")
      */
     private $photo;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="string", length=255)
      */
-    private $moodboard;
+    private $description;
+
+    public function __construct()
+    {
+        $this->photo = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -67,26 +74,44 @@ class Article
         return $this;
     }
 
-    public function getPhoto(): ?string
+    /**
+     * @return Collection|photo[]
+     */
+    public function getPhoto(): Collection
     {
         return $this->photo;
     }
 
-    public function setPhoto(string $photo): self
+    public function addPhoto(photo $photo): self
     {
-        $this->photo = $photo;
+        if (!$this->photo->contains($photo)) {
+            $this->photo[] = $photo;
+            $photo->setArticle($this);
+        }
 
         return $this;
     }
 
-    public function getMoodboard(): ?bool
+    public function removePhoto(photo $photo): self
     {
-        return $this->moodboard;
+        if ($this->photo->removeElement($photo)) {
+            // set the owning side to null (unless already changed)
+            if ($photo->getArticle() === $this) {
+                $photo->setArticle(null);
+            }
+        }
+
+        return $this;
     }
 
-    public function setMoodboard(bool $moodboard): self
+    public function getDescription(): ?string
     {
-        $this->moodboard = $moodboard;
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
 
         return $this;
     }

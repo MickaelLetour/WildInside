@@ -57,23 +57,16 @@
                     <li class="nav-item active">
                         <a class="nav-link text-center text-uppercase" href="{{ path('home') }}">Accueil</a>
                     </li>
+                    {% for theme in themes.theme %}
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-uppercase" href="">{{ theme.name }}</a>
+                        </li>
+                    {% endfor %}
                     <li class="nav-item">
-                        <a class="nav-link text-center text-uppercase" href="#About">theme 1</a>
+                        <a class="nav-link text-center text-uppercase" href="">commentaires</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center text-uppercase" href="#Skills">theme 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-uppercase" href="#Book">theme 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-uppercase" href="#Experiences">theme 4</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-uppercase" href="#Diplomas">commentaires</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-uppercase" href="#Contact">contact</a>
+                        <a class="nav-link text-center text-uppercase" href="">contact</a>
                     </li>
                 </ul>
             </div>
