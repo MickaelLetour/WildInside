@@ -1,10 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Article - Wild Inside{% endblock %}
+{% block title %}{{ article.title }} - Wild Inside{% endblock %}
 
 {% block content %}
 
-    <h1>Article</h1>
-    <p>Ceci est un article du theme</p>
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.description }}</p>
+    
+    {% for photo in photos %}
+        <img src="/uploads/{{ photo.link }}" alt="">
+    {% endfor %}
 
 {% endblock %}

@@ -3,7 +3,11 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Photo;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 
 class PhotoCrudController extends AbstractCrudController
 {
@@ -12,14 +16,21 @@ class PhotoCrudController extends AbstractCrudController
         return Photo::class;
     }
 
-    /*
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud->setDefaultSort(['id' => 'DESC']);
+    }
+
     public function configureFields(string $pageName): iterable
     {
         return [
-            IdField::new('id'),
-            TextField::new('title'),
-            TextEditorField::new('description'),
+            ImageField::new('link')
+                ->setBasePath('uploads/')
+                ->setUploadDir('public/uploads')
+                ->setUploadedFileNamePattern('[randomhash].[extension]')
+                ->setRequired(false),
+            AssociationField::new('article'),
+            BooleanField::new('moodBoard'),
         ];
     }
-    */
 }
