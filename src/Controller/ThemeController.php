@@ -3,7 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Article;
-use App\Entity\Photo;
+use App\Entity\Image;
+use App\Entity\Theme;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -29,14 +30,18 @@ class ThemeController extends AbstractController
      */
     public function index($id): Response
     {
+        $theme = $this->entityManager->getRepository(Theme::class)->find($id);
         $articles = $this->entityManager->getRepository(Article::class)->findByTheme($id);
-        $photos = [];
-        foreach ($articles as $article){
-            $photos [] = $this->entityManager->getRepository(Photo::class)->findByArticle($article);
+        $fullArticle = [];
+        if ($articles != null){
+            foreach ($articles as $article){
+                $fullArticle [] = $this->entityManager->getRepository(Image::class)->findByDESCArticle($article);
+            }
         }
 
         return $this->render('theme/index.html.twig',[
-            'theme' => $photos
+            'articles' => $fullArticle,
+            'theme' => $theme
         ]);
     }
 }

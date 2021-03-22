@@ -1,11 +1,101 @@
 .banner{
-    background-image: url("../img/120551495-long-exposure-photograph-of-downtown-manhattan-with-rush-hour-traffic.jpg");
     max-width: 100%;
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-height: 50vh;
     position: relative;
 }
+.banner img {
+    max-height: 50vh;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+@media all and ( max-width: 768px ) {
+    .bannerDesktop{
+        display: none;
+    }
+    .bannerMobile{
+        display: block;
+    }
+}
 
+@media all and ( min-width: 769px ) {
+    .bannerMobile{
+        display: none;
+    }
+    .bannerDesktop{
+        display: block;
+    }
+}
 
+.articleDescription {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.moodboard{
+    min-height: 800px;
+}
+
+.carousel-theme{
+    min-height: 150px;
+}
+
+/* --------------------------------------------------------------- Random Moodboard-----------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e4edf9;
+}
+
+.grid {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.item {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 5px
+}
+
+.item-content {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    background: white;
+}
+
+.item--kitchen{
+    max-width:600px;
+    height: auto;
+}
+
+.item--inspiration{
+    max-width: 300px;
+    height: auto;
+}
+
+.item--color{
+    max-width: 100px;
+    height: auto;
+}
+
+.item.muuri-item-dragging {
+    z-index: 3;
+}
+.item.muuri-item-releasing {
+    z-index: 2;
+}
+.item.muuri-item-hidden {
+    z-index: 0;
+}*/

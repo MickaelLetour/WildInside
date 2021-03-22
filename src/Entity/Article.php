@@ -31,18 +31,28 @@ class Article
     private $theme;
 
     /**
-     * @ORM\OneToMany(targetEntity=Photo::class, mappedBy="article")
+     * @ORM\OneToMany(targetEntity=Image::class, mappedBy="article", cascade={"persist"})
      */
-    private $photo;
+    private $moodBoard;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="text", nullable=true)
      */
     private $description;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $content;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $online;
+
     public function __construct()
     {
-        $this->photo = new ArrayCollection();
+        $this->moodBoard = new ArrayCollection();
     }
 
     public function __toString(): ?string
@@ -80,29 +90,29 @@ class Article
     }
 
     /**
-     * @return Collection|photo[]
+     * @return Collection|Image[]
      */
-    public function getPhoto(): Collection
+    public function getMoodBoard(): Collection
     {
-        return $this->photo;
+        return $this->moodBoard;
     }
 
-    public function addPhoto(photo $photo): self
+    public function addMoodBoard(Image $moodBoard): self
     {
-        if (!$this->photo->contains($photo)) {
-            $this->photo[] = $photo;
-            $photo->setArticle($this);
+        if (!$this->moodBoard->contains($moodBoard)) {
+            $this->moodBoard[] = $moodBoard;
+            $moodBoard->setArticle($this);
         }
 
         return $this;
     }
 
-    public function removePhoto(photo $photo): self
+    public function removeMoodBoard(Image $moodBoard): self
     {
-        if ($this->photo->removeElement($photo)) {
+        if ($this->moodBoard->removeElement($moodBoard)) {
             // set the owning side to null (unless already changed)
-            if ($photo->getArticle() === $this) {
-                $photo->setArticle(null);
+            if ($moodBoard->getArticle() === $this) {
+                $moodBoard->setArticle(null);
             }
         }
 
@@ -114,9 +124,33 @@ class Article
         return $this->description;
     }
 
-    public function setDescription(string $description): self
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(?string $content): self
+    {
+        $this->content = $content;
+
+        return $this;
+    }
+
+    public function getOnline(): ?bool
+    {
+        return $this->online;
+    }
+
+    public function setOnline(bool $online): self
+    {
+        $this->online = $online;
 
         return $this;
     }

@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -43,6 +45,16 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=255)
      */
     private $lastname;
+
+    /**
+     * @ORM\OneToMany(targetEntity=ResetPassword::class, mappedBy="user")
+     */
+    private $resetPasswords;
+
+    public function __construct()
+    {
+        $this->resetPasswords = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -125,6 +137,11 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
+    public function getFullName(): ?string
+    {
+        return $this->getFirstname() . ' ' . $this->getLastname();
+    }
+
     public function getFirstname(): ?string
     {
         return $this->firstname;
@@ -145,6 +162,36 @@ class User implements UserInterface
     public function setLastname(string $lastname): self
     {
         $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|ResetPassword[]
+     */
+    public function getResetPasswords(): Collection
+    {
+        return $this->resetPasswords;
+    }
+
+    public function addResetPassword(ResetPassword $resetPassword): self
+    {
+        if (!$this->resetPasswords->contains($resetPassword)) {
+            $this->resetPasswords[] = $resetPassword;
+            $resetPassword->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeResetPassword(ResetPassword $resetPassword): self
+    {
+        if ($this->resetPasswords->removeElement($resetPassword)) {
+            // set the owning side to null (unless already changed)
+            if ($resetPassword->getUser() === $this) {
+                $resetPassword->setUser(null);
+            }
+        }
 
         return $this;
     }

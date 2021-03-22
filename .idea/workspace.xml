@@ -2,24 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d847446b-0cc3-46d1-ad00-01d430409b37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b542d342-09ff-4f12-9967-2d9362fe20fe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b542d342-09ff-4f12-9967-2d9362fe20fe/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e618482c-07c7-4407-81ba-e80d6aa298be.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e618482c-07c7-4407-81ba-e80d6aa298be/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ImageRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WildInside.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WildInside.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f0b30862-e653-4d17-ab3d-24c9f1be7e8a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f0b30862-e653-4d17-ab3d-24c9f1be7e8a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/wildinside.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/wildinside.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bannerDesktop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bannerMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/176538cd8cf4701fde0b98f94da815577cbbf48d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/415eaf7e779921cba1b307b9c8944e3f8db5b679.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/6d0ab8ecda27aeec95118b9f3bb488ec8865174b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/9be74cd8732957e23c416661075d032af952d619.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/9d38068114743b83af1a1903ba0c6fa58831d066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/bf8c97f95ba54c17c91ba461f65b3bb423b27193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/f506b6d3795aa2d2d49c8e93801742e833a81ac0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/fce1f75930975ec90918b8de0877bc7fa7b21329.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ArticleCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ArticleCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/PhotoCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/PhotoCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/PhotoCrudController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ThemeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ThemeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Photo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PhotoRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/theme/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/theme/index.html.twig" afterDir="false" />
     </list>
@@ -149,6 +170,19 @@
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
       <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailjet-mailer" />
+      <path value="$PROJECT_DIR$/vendor/mailjet/mailjet-apiv3-php" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oVyBQ0i2aca5BQiFHwgtIBoZRR" />
@@ -165,6 +199,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Margaux-Besson" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -187,6 +222,29 @@
       <workItem from="1613474087272" duration="1181000" />
       <workItem from="1613475290824" duration="14779000" />
       <workItem from="1613555845403" duration="18973000" />
+      <workItem from="1613644284724" duration="53000" />
+      <workItem from="1613644364526" duration="6000" />
+      <workItem from="1613644383760" duration="421000" />
+      <workItem from="1613644820959" duration="10153000" />
+      <workItem from="1613733538916" duration="20401000" />
+      <workItem from="1613992500546" duration="15278000" />
+      <workItem from="1614079784030" duration="20339000" />
+      <workItem from="1614103900458" duration="4801000" />
+      <workItem from="1614167322831" duration="12278000" />
+      <workItem from="1614246328394" duration="10245000" />
+      <workItem from="1614340307296" duration="606000" />
+      <workItem from="1614364255365" duration="1442000" />
+      <workItem from="1614367198627" duration="630000" />
+      <workItem from="1614593046065" duration="12161000" />
+      <workItem from="1614689732159" duration="77000" />
+      <workItem from="1614689837125" duration="25666000" />
+      <workItem from="1615198944837" duration="7657000" />
+      <workItem from="1615285734719" duration="10274000" />
+      <workItem from="1615371330729" duration="15004000" />
+      <workItem from="1615543422635" duration="28000" />
+      <workItem from="1616015077344" duration="1983000" />
+      <workItem from="1616017128393" duration="1224000" />
+      <workItem from="1616059528683" duration="17615000" />
     </task>
     <servers />
   </component>
