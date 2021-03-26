@@ -2,47 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d847446b-0cc3-46d1-ad00-01d430409b37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ImageRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WildInside.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WildInside.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f0b30862-e653-4d17-ab3d-24c9f1be7e8a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f0b30862-e653-4d17-ab3d-24c9f1be7e8a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/wildinside.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/wildinside.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/bannerDesktop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/bannerMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/176538cd8cf4701fde0b98f94da815577cbbf48d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/415eaf7e779921cba1b307b9c8944e3f8db5b679.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/6d0ab8ecda27aeec95118b9f3bb488ec8865174b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/9be74cd8732957e23c416661075d032af952d619.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/9d38068114743b83af1a1903ba0c6fa58831d066.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/bf8c97f95ba54c17c91ba461f65b3bb423b27193.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/f506b6d3795aa2d2d49c8e93801742e833a81ac0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/fce1f75930975ec90918b8de0877bc7fa7b21329.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ArticleCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ArticleCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/PhotoCrudController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ThemeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ThemeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Photo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PhotoRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210216113022.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210216121911.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210216130303.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210216130705.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210216134131.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210219115824.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210219124237.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210219150525.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210219153722.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210302135202.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210303110836.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210303120648.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210308105640.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210308122011.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210310124427.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210318095451.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210318120601.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/Mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/NavTheme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ArticleCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/CommentsCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ImageCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ThemeCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CommentsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ContactController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ResetPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ThemeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Image.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Position.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/ResetPassword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CommentsFormType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ContactType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ResetPasswordType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CommentsRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ImageRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PositionRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ResetPasswordRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ThemeRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/theme/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/theme/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +218,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Margaux-Besson" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -245,6 +263,8 @@
       <workItem from="1616015077344" duration="1983000" />
       <workItem from="1616017128393" duration="1224000" />
       <workItem from="1616059528683" duration="17615000" />
+      <workItem from="1616750019005" duration="200000" />
+      <workItem from="1616750501121" duration="2426000" />
     </task>
     <servers />
   </component>
