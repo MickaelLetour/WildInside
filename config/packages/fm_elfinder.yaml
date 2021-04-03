@@ -1,0 +1,18 @@
+fm_elfinder:
+    assets_path: /assets
+    instances:
+        default:
+            locale: fr
+            editor: ckeditor
+            fullscreen: true
+            connector:
+                debug: true # Désactive le débug
+                roots:
+                    uploads:
+                        accepted_name: '/^[^\.].*/'
+                        show_hidden: false # Permet de masquer les fichiers cachés
+                        driver: LocalFileSystem
+                        path: uploads
+                        upload_allow: ['image/png', 'image/jpg', 'image/jpeg', 'image/gif']
+                        upload_deny: ['all']
+                        upload_max_size: 2M
