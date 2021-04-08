@@ -6,6 +6,7 @@ use App\Repository\ThemeRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ThemeRepository::class)
@@ -31,6 +32,12 @@ class Theme
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(
+     *      min = 10,
+     *      max = 250,
+     *      minMessage = "Votre description doit contenir au moins 10 caractères",
+     *      maxMessage = "Votre description ne peut contenir que 250 caractères maximum"
+     * )
      */
     private $description;
 
