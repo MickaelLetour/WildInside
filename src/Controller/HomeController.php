@@ -27,7 +27,7 @@ class HomeController extends AbstractController
      */
     public function index(): Response
     {
-        $bannerMobile = $this->entityManager->getRepository(Image::class)->findOneByMoodboard(7);
+        $bannerMobile = $this->entityManager->getRepository(Image::class)->findOneByMoodboard(5);
         $bannerDesktop = $this->entityManager->getRepository(Image::class)->findOneByMoodboard(6);
         $lastArticles = [];
         for($i = 1; $i <= 4; $i ++){
@@ -38,8 +38,8 @@ class HomeController extends AbstractController
                 }
                 $lastArticles[$i] = [
                     $moodBoard = [
-                        'paysageBas' => $this->entityManager->getRepository(Image::class)->findMoodboard($article->getId(),2,2),
                         'paysageDroite' => $this->entityManager->getRepository(Image::class)->findMoodboard($article->getId(),1,2),
+                        'paysageBas' => $this->entityManager->getRepository(Image::class)->findMoodboard($article->getId(),2,2),
                     ],
                     $article,
                 ];

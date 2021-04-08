@@ -29,7 +29,7 @@ class Image
     private $article;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Position::class, inversedBy="images")
+     * @ORM\Column(type="integer")
      */
     private $moodboard;
 
@@ -62,12 +62,12 @@ class Image
         return $this;
     }
 
-    public function getMoodboard(): ?Position
+    public function getMoodboard(): ?int
     {
         return $this->moodboard;
     }
 
-    public function setMoodboard(?Position $moodboard): self
+    public function setMoodboard(int $moodboard): self
     {
         $this->moodboard = $moodboard;
 

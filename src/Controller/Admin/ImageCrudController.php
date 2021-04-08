@@ -5,6 +5,7 @@ namespace App\Controller\Admin;
 use App\Entity\Image;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 
 class ImageCrudController extends AbstractCrudController
@@ -24,7 +25,16 @@ class ImageCrudController extends AbstractCrudController
                 ->setUploadedFileNamePattern('[randomhash].[extension]')
                 ->setRequired(false),
             AssociationField::new('article', 'Article'),
-            AssociationField::new('moodboard','Position')
+            ChoiceField::new('moodboard')->setChoices([
+                'Portrait | Gauche' => 0,
+                'Paysage | Droite' => 1,
+                'Paysage | Bas' => 2,
+                'Colori' => 3,
+                'Nuancier' => 4,
+                'Bannière Mobile' => 5,
+                'Bannière Bureau' => 6,
+            ]),
+
         ];
     }
 

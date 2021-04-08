@@ -22,20 +22,23 @@
                                 <div id="carouselControlsTheme{{ article.0.article.id }}" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">
                                         {% set i = 0 %}
+                                        {% set j = 0 %}
                                         {% for image in article %}
-                                            {% if ((image.moodboard == "Paysage | Droite" or image.moodboard == "Paysage | Bas") and i == 0) %}
+                                            {% if ((image.moodboard == 1 or image.moodboard == 2) and i == 0 and j <4) %}
                                                 <div class="carousel-item active">
                                                     <div class="d-flex justify-content-center w-100 h-100">
                                                         <img class="img-fluid rounded" src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}">
                                                     </div>
                                                 </div>
                                                 {% set i = i + 1 %}
-                                            {% elseif ((image.moodboard == "Paysage | Droite" or image.moodboard == "Paysage | Bas") and i == 1) %}
+                                                {% set j = j + 1 %}
+                                            {% elseif ((image.moodboard == 1 or image.moodboard == 2) and i == 1 and j <4) %}
                                                 <div class="carousel-item">
                                                     <div class="d-flex justify-content-center w-100 h-100">
                                                         <img class="img-fluid rounded" src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}">
                                                     </div>
                                                 </div>
+                                                {% set j = j + 1 %}
                                             {% endif %}
                                         {% endfor %}
                                         <a class="carousel-control-prev" href="#carouselControlsTheme{{ article.0.article.id }}" role="button" data-slide="prev">
