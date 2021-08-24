@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ theme.name }} - Wild Inside{% endblock %}
+
+{% block content %}
+    <div class="min-vh-100 mt-4">
+        <div>
+            <h1>{{ theme.name }}</h1>
+            <p>{{ theme.description }}</p>
+        </div>
+
+        <div class="row justify-content-center">
+            {% if articles == null %}
+                <h2 class="mt-5">Article à venir...</h2>
+            {% else %}
+                {% set j = 1 %}
+                {% for article in articles %}
+                    {% if (article != null) and (article.0.article.online == true) %}
+                        {% set j = j + 1 %}
+                        <div class="carousel-theme row col-10 col-lg-12 my-4 border rounded p-0 justify-content-center">
+                            <div class="col-12 col-md-4 p-0 justify-content-center align-items-center row m-0 bg-dark">
+                                <div id="carouselControlsTheme{{ article.0.article.id }}" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner p-3">
+                                        {% set i = 0 %}
+                                        {% for image in article %}
+                                            {% if ((i == 0) and (image.thumbnail == 1)) %}
+                                                <div class="carousel-item active">
+                                                    <div class="sizeImgCarousel d-flex justify-content-center">
+                                                        <img class="img-fluid rounded" src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}">
+                                                    </div>
+                                                </div>
+                                                {% set i = i + 1 %}
+                                            {% elseif ((i == 1) and (image.thumbnail == 1)) %}
+                                                <div class="carousel-item">
+                                                    <div class="sizeImgCarousel d-flex justify-content-center">
+                                                        <img class="img-fluid rounded" src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}">
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <a class="carousel-control-prev" href="#carouselControlsTheme{{ article.0.article.id }}" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselControlsTheme{{ article.0.article.id }}" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 p-3 m-0 row align-items-center justify-content-center">
+                                <div class="col-12">
+                                    <h3 class="text-center">{{ article.0.article.title }}</h3>
+                                    <div>
+                                        <div class="articleDescription m-auto">
+                                            {% if article.0.article.description != null %}
+                                                {{ article.0.article.description | raw }}
+                                            {% else %}
+                                                {{ article.0.article.content | raw }}
+                                            {% endif %}
+                                        </div>
+                                        <a href="{{ path('article', {'id' : article.0.article.id}) }}"><p class="text-center">Voir plus</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {% if j == 1 %}
+                    <h2 class="mt-5">Article à venir...</h2>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.title }} - Wild Inside{% endblock %}
+
+{% block content %}
+
+    <h1 class="text-center text-uppercase m-5">{{ article.title }}</h1>{# 
+    <div class="row flex min-vh-100 align-items-center justify-content-center m-auto"> #}
+
+        <div class='grid'>
+            <div class='grid-sizer'></div>
+            <div class='gutter-sizer'></div>
+            {% for image in moodboard %} 
+                <div class='grid-item'>
+                    <a class="linkLightbox" href="/uploads/{{ image.image }}" data-toggle="lightbox" data-gallery="gallery">
+                        <img class="img-fluid" src="/uploads/{{ image.image }}" alt="{{ image.image }}">
+                    </a>
+                </div>
+            {% endfor %}
+
+            
+            {# <div class="row col-12 col-lg-8 moodboard justify-content-center bg-dark p-2 mb-4"> #}
+            {# <div class="row col-6 justify-content-around p-1">
+                {% for image in moodboard.portraitGauche %}
+                    {% set paysageDroite = 0 %}
+                    
+                    <div class="col-12 col-md-6 moodboard-tall p-1 row m-0 align-items-stretch">
+                        <div class="col-md-12 p-1 row m-0 align-items-center justify-content-center">
+                            <a class="linkLightbox" href="/uploads/{{ image.image }}" data-toggle="lightbox" data-gallery="gallery">
+                                <img class="img-fluid border border-white rounded" src="/uploads/{{ image.image }}" alt="{{ image.image }}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 p-1 row justify-content-around m-0">
+                        {% if (paysageDroite != 1) %}
+                            {% for image in moodboard.paysageDroite %}
+                                <div class="col-12 moodboard-small p-1 row align-items-center justify-content-center">
+                                    <a class="linkLightbox" href="/uploads/{{ image.image }}" data-toggle="lightbox" data-gallery="gallery">
+                                        <img src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}" class="img-fluid border border-white rounded">
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                        {% set paysageDroite = paysageDroite + 1 %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-6 row justify-content-around p-1">
+                {% for image in moodboard.paysageBas %}
+                    <div class="col-12 col-md-6 p-1 row m-0">
+                        <div class="col-12 moodboard-medium p-1 row justify-content-center m-0">
+                            <a class="linkLightbox" href="/uploads/{{ image.image }}" data-toggle="lightbox" data-gallery="gallery">
+                                <img src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}" class="img-fluid border border-white rounded">
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div> #}
+            {# {% set color = 0 %}
+                {% if ( color != 1) %}
+                    <div class="col-12 row justify-content-center p-1 align-items-center">
+                        {% if moodboard.nuancier != null %}
+                            {% for image in moodboard.nuancier %}
+                                <div class="col-10 moodboard-colori p-1">
+                                    <a class="linkLightbox" href="/uploads/{{ image.image }}" data-toggle="lightbox" data-gallery="gallery">
+                                        <img src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}" class="img-fluid border border-white rounded">
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            {% for image in moodboard.colori %}
+                                <div class="col-2 moodboard-colori p-1">
+                                    <a class="linkLightbox" href="/uploads/{{ image.image }}" data-toggle="lightbox" data-gallery="gallery">
+                                        <img src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}" class="img-fluid border border-white rounded">
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    {% set color = color + 1 %}
+                {% endif %} #}
+        </div>
+        {% if article.description != null %}
+            <div class="col-12 col-lg-4 p-4">{{ article.description | raw }}</div>
+        {% endif %}
+    {# </div> #}
+    {% if article.content != null %}
+        <div class="mt-4">{{ article.content | raw }}</div>
+    {% endif %}
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox()
+        });
+
+        let $grid = $('.grid');
+
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer'
+            });
+        });
+
+    </script>
+{% endblock %}
+

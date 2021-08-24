@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Me contacter - Wild Inside{% endblock %}
+
+{% block content %}
+    <div class="container min-vh-100 justify-content-center mt-4">
+
+            <h2 class="text-center">Me contacter</h2>
+            <p class="text-center">N'hésitez pas à prendre contact avec moi</p>
+            {% for message in app.flashes('notice') %}
+                <div class="alert alert-info">{{ message }}</div>
+            {% endfor %}
+            <div class="row justify-content-center">
+                <div class="col-md-8">{{ form(form) }}</div>
+            </div>
+
+    </div>
+{% endblock %}

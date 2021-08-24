@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="container min-vh-100 justify-content-center m-auto">
+
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-sucess bg-success mt-4">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        <h1 class="text-center mt-5 border border-dark px-5 py-2">Vos Commentaires</h1>
+        <p class="text-center text-light mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        {% for comment in comments %}
+            <div class="col-12 my-3">
+                <h4>{{comment.pseudo}}</h4>
+                <p>{{comment.createdAt |date('d-m-Y')}}</p>
+                <p>{{comment.comment}}</p>
+            </div>
+        {% endfor %}
+        <div class="col text-right mb-4">
+            <a href="{{ path('newComment') }}" class="btn btn-primary">Nouveau commentaire</a>
+        </div>
+        <div class="navigation m-auto">
+            {{ knp_pagination_render(comments, '@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig') }}
+        </div>
+    </div>
+
+{% endblock %}
