@@ -1,1 +1,2 @@
-rsync -av ./ bs9ot_mickael@bs9ot.ftp.infomaniak.com:~/sites/wild-inside.fr/ --include=public/build --include=public/.htaccess --include=vendor --exclude-from=.gitignore --exclude=".*"
+rsync -av ./ bs9ot_mickael@bs9ot.ftp.infomaniak.com:~/sites/wild-inside.fr/ --include=public/build --include=public/.htaccess --exclude-from=.gitignore --exclude=".*" --exclude=".env"
+ssh bs9ot_mickael@letourwebdev.com 'cd sites/wild-inside.fr && php bin/console cache:clear'

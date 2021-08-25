@@ -38,6 +38,6 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Theme', 'fab fa-ethereum', Theme::class);
         yield MenuItem::linkToCrud('Image', 'fas fa-images', Image::class);
         yield MenuItem::linkToCrud('Commentaire', 'fas fa-comments', Comments::class);
-        yield MenuItem::linkToCrud('Utilisateur', 'fas fa-user', User::class);
+        //yield MenuItem::linkToCrud('Utilisateur', 'fas fa-user', User::class);
     }
 }

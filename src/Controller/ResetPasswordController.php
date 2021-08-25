@@ -55,10 +55,10 @@ class ResetPasswordController extends AbstractController
                 ]);
 
                 $content = "Bonjour ".$user->getFullName()."<br>Vous avez demandé à réinitialiser votre mot de passe sur Wild Inside.<br><br>";
-                $content .= "Merci de bien vouloir cliquer sur le lien suivant pour <a href='".$url."'>mettre à jour votre mot de passe</a>.";
+                $content .= 'Merci de bien vouloir cliquer sur le lien suivant pour <a href="wild-inside.fr'.$url.'">mettre à jour votre mot de passe</a>.';
 
                 $mail = new Mail();
-                $mail->send($user->getEmail(), $user->getFullName(),'Réinitialiser votre de mot de passe sur la Boutique Portugaise', $content);
+                $mail->send($user->getEmail(), $user->getFullName(),'Réinitialiser votre de mot de passe sur wild-inside.fr', $content);
 
                 $this->addFlash('notice', 'Vous allez recevoir très prochainement un mail avec la procédure pour réinitialiser votre mot de passe.');
             } else {

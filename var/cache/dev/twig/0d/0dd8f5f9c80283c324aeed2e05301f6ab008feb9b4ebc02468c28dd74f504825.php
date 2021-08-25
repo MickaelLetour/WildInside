@@ -188,7 +188,7 @@ class __TwigTemplate_f5493354e597a391b80685afa2b70a86c0a86710745ea29d93fc1a44e5c
             <!-- Copyright -->
             <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2)\">
                 <span class=\"text-secondary\">© 2021 Copyright:</span>
-                <a class=\"copyright\" href=\"https://www.cvmickaelletour.com/\">Mickael Letour</a>
+                <a class=\"copyright\" href=\"https://www.letourwebdev.com/\">Mickael Letour</a>
             </div>
             <!-- Copyright -->
         </footer>
@@ -390,7 +390,7 @@ class __TwigTemplate_f5493354e597a391b80685afa2b70a86c0a86710745ea29d93fc1a44e5c
             <!-- Copyright -->
             <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2)\">
                 <span class=\"text-secondary\">© 2021 Copyright:</span>
-                <a class=\"copyright\" href=\"https://www.cvmickaelletour.com/\">Mickael Letour</a>
+                <a class=\"copyright\" href=\"https://www.letourwebdev.com/\">Mickael Letour</a>
             </div>
             <!-- Copyright -->
         </footer>
