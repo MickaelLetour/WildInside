@@ -25,7 +25,6 @@ return array(
     'App\\Entity\\Article' => $baseDir . '/src/Entity/Article.php',
     'App\\Entity\\Comments' => $baseDir . '/src/Entity/Comments.php',
     'App\\Entity\\Image' => $baseDir . '/src/Entity/Image.php',
-    'App\\Entity\\ResetPassword' => $baseDir . '/src/Entity/ResetPassword.php',
     'App\\Entity\\Theme' => $baseDir . '/src/Entity/Theme.php',
     'App\\Entity\\User' => $baseDir . '/src/Entity/User.php',
     'App\\Form\\CommentsFormType' => $baseDir . '/src/Form/CommentsFormType.php',

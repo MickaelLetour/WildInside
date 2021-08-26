@@ -678,7 +678,6 @@ class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
         'App\\Entity\\Article' => __DIR__ . '/../..' . '/src/Entity/Article.php',
         'App\\Entity\\Comments' => __DIR__ . '/../..' . '/src/Entity/Comments.php',
         'App\\Entity\\Image' => __DIR__ . '/../..' . '/src/Entity/Image.php',
-        'App\\Entity\\ResetPassword' => __DIR__ . '/../..' . '/src/Entity/ResetPassword.php',
         'App\\Entity\\Theme' => __DIR__ . '/../..' . '/src/Entity/Theme.php',
         'App\\Entity\\User' => __DIR__ . '/../..' . '/src/Entity/User.php',
         'App\\Form\\CommentsFormType' => __DIR__ . '/../..' . '/src/Form/CommentsFormType.php',

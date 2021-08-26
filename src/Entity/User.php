@@ -53,9 +53,19 @@ class User implements UserInterface
     private $lastname;
 
     /**
-     * @ORM\OneToMany(targetEntity=ResetPassword::class, mappedBy="user")
+     * @ORM\Column(type="string", length=255)
      */
     private $resetPasswords;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $token;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $createdAt;
 
     public function __construct()
     {
@@ -173,14 +183,14 @@ class User implements UserInterface
     }
 
     /**
-     * @return Collection|ResetPassword[]
+     * @return Collection
      */
-    public function getResetPasswords(): Collection
+    /* public function getResetPasswords(): Collection
     {
         return $this->resetPasswords;
     }
 
-    public function addResetPassword(ResetPassword $resetPassword): self
+    public function addResetPassword($resetPassword): self
     {
         if (!$this->resetPasswords->contains($resetPassword)) {
             $this->resetPasswords[] = $resetPassword;
@@ -190,7 +200,7 @@ class User implements UserInterface
         return $this;
     }
 
-    public function removeResetPassword(ResetPassword $resetPassword): self
+    public function removeResetPassword($resetPassword): self
     {
         if ($this->resetPasswords->removeElement($resetPassword)) {
             // set the owning side to null (unless already changed)
@@ -198,6 +208,30 @@ class User implements UserInterface
                 $resetPassword->setUser(null);
             }
         }
+
+        return $this;
+    } */
+
+    public function getToken(): ?string
+    {
+        return $this->token;
+    }
+
+    public function setToken(?string $token): self
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(?\DateTimeInterface $createdAt): self
+    {
+        $this->createdAt = $createdAt;
 
         return $this;
     }

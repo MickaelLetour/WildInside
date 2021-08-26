@@ -42,8 +42,7 @@ class ResetPasswordController extends AbstractController
 
             if ($user) {
                 // 1 : enregistrer en base la demande de reset password avec user, token, createdAt.
-                $resetPassword = new ResetPassword();
-                $resetPassword->setUser($user);
+                $resetPassword = $user;
                 $resetPassword->setToken(uniqid());
                 $resetPassword->setCreatedAt(new \DateTime());
                 $this->entityManager->persist($resetPassword);
@@ -78,7 +77,7 @@ class ResetPasswordController extends AbstractController
      */
     public function update(Request $request, UserPasswordEncoderInterface $encoder, $token):Response
     {
-        $resetPassword = $this->entityManager->getRepository(ResetPassword::class)->findOneByToken($token);
+        $resetPassword = $this->entityManager->getRepository(User::class)->findOneByToken($token);
 
         if (!$resetPassword) {
             return $this->redirectToRoute('resetPassword');
@@ -99,8 +98,8 @@ class ResetPasswordController extends AbstractController
             $new_pwd = $form->get('new_password')->getData();
 
             // Encodage des mots de passes
-            $password = $encoder->encodePassword($resetPassword->getUser(), $new_pwd);
-            $resetPassword->getUser()->setPassword($password);
+            $password = $encoder->encodePassword($resetPassword, $new_pwd);
+            $resetPassword->setPassword($password);
 
             // Flush en base de données
             $this->entityManager->flush();

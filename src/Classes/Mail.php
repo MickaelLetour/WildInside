@@ -16,7 +16,7 @@ class Mail {
             'Messages' => [
                 [
                     'From' => [
-                        'Email' => "mickael.letour@gmail.com",
+                        'Email' => "s.virginie@wild-inside.fr",
                         'Name' => "Wild Inside"
                     ],
                     'To' => [

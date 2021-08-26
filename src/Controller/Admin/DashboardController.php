@@ -6,7 +6,7 @@ use App\Entity\Article;
 use App\Entity\Comments;
 use App\Entity\Image;
 use App\Entity\Theme;
-use App\Entity\User;
+//use App\Entity\User;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;

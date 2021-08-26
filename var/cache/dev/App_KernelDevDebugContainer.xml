@@ -505,10 +505,6 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
-    <service id="App\Repository\ResetPasswordRepository" class="App\Repository\ResetPasswordRepository" autowire="true" autoconfigure="true">
-      <tag name="doctrine.repository_service"/>
-      <argument type="service" id="doctrine"/>
-    </service>
     <service id="App\Repository\ThemeRepository" class="App\Repository\ThemeRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
@@ -4530,7 +4526,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.CRhDuZb"/>
+      <argument type="service" id=".service_locator.BfstAAR"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -6051,8 +6047,6 @@
     <service id=".abstract.instanceof.App\Repository\CommentsRepository" class="App\Repository\CommentsRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ImageRepository" class="App\Repository\ImageRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\ImageRepository" class="App\Repository\ImageRepository" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ResetPasswordRepository" class="App\Repository\ResetPasswordRepository" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Repository\ResetPasswordRepository" class="App\Repository\ResetPasswordRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ThemeRepository" class="App\Repository\ThemeRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\ThemeRepository" class="App\Repository\ThemeRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
@@ -6997,13 +6991,12 @@
       <argument type="service" id="cache.doctrine.orm.default.result"/>
       <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
     </service>
-    <service id=".service_locator.CRhDuZb" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.BfstAAR" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\ArticleRepository" type="service_closure" id="App\Repository\ArticleRepository"/>
         <argument key="App\Repository\CommentsRepository" type="service_closure" id="App\Repository\CommentsRepository"/>
         <argument key="App\Repository\ImageRepository" type="service_closure" id="App\Repository\ImageRepository"/>
-        <argument key="App\Repository\ResetPasswordRepository" type="service_closure" id="App\Repository\ResetPasswordRepository"/>
         <argument key="App\Repository\ThemeRepository" type="service_closure" id="App\Repository\ThemeRepository"/>
         <argument key="App\Repository\UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
