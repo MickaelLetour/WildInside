@@ -22,6 +22,21 @@ class ImageRepository extends ServiceEntityRepository
     /**
      * @return Image[] Returns an array of Image objects
      */
+    public function findMoodboard($id, $value, $nb) :array{
+        return $this->createQueryBuilder('p')
+            ->Where('p.article = :id')
+            ->setParameter('id', $id)
+            ->AndWhere('p.position = :val')
+            ->setParameter('val', $value)
+            ->setMaxResults($nb)
+            ->orderBy('p.id', 'DESC')
+            ->getQuery()
+            ->getResult();
+    }
+
+    /**
+     * @return Image[] Returns an array of Image objects
+     */
     public function findAllImageByArticle($id) :array{
         return $this->createQueryBuilder('p')
             ->Where('p.article = :id')

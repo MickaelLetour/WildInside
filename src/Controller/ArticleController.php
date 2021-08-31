@@ -30,15 +30,15 @@ class ArticleController extends AbstractController
     {
         $article = $this->entityManager->getRepository(Article::class)->find($id);
 
-        /* $moodboard = [
-            'colori' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,2,6),
-            'paysageDroite' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,4,2),
-            'paysageBas' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,5,2),
-            'portraitGauche' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,3,1),
-            'nuancier' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,6,1)
-        ]; */
+        $moodboard = [
+            'colori' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,'colori',6),
+            'paysageDroite' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,'paysageDroite',2),
+            'paysageBas' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,'paysageBas',2),
+            'portraitGauche' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,'portraitGauche',1),
+            'nuancier' => $this->entityManager->getRepository(Image::class)->findMoodboard($id,'nuancier',1)
+        ]; 
 
-        $moodboard = $this->entityManager->getRepository(Image::class)->findAllImageByArticle($id);
+        //$moodboard = $this->entityManager->getRepository(Image::class)->findAllImageByArticle($id);
 
         return $this->render('article/index.html.twig',[
             'article' => $article,
