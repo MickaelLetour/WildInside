@@ -27,16 +27,6 @@ class Image
     private $image;
 
     /**
-     * @ORM\Column(type="boolean")
-     */
-    private $banner;
-
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $thumbnail;
-
-    /**
      * @ORM\ManyToOne(targetEntity=Article::class, inversedBy="image")
      */
     private $article;
@@ -64,30 +54,6 @@ class Image
         return $this;
     }
 
-    public function getBanner(): ?bool
-    {
-        return $this->banner;
-    }
-
-    public function setBanner(bool $banner): self
-    {
-        $this->banner = $banner;
-
-        return $this;
-    }
-
-    public function getThumbnail(): ?bool
-    {
-        return $this->thumbnail;
-    }
-
-    public function setThumbnail(bool $thumbnail): self
-    {
-        $this->thumbnail = $thumbnail;
-
-        return $this;
-    }
-
     public function getArticle(): ?Article
     {
         return $this->article;
@@ -111,6 +77,5 @@ class Image
 
         return $this;
     }
-    
 
 }

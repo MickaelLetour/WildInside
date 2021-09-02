@@ -138,7 +138,7 @@ class __TwigTemplate_abd8da362aed980128d7d9801630b1113d3593aab4385f2e8f7da5b24a5
                     foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
                         // line 26
                         echo "                                            ";
-                        if (((0 === twig_compare((isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 26, $this->source); })()), 0)) && (0 === twig_compare(twig_get_attribute($this->env, $this->source, $context["image"], "thumbnail", [], "any", false, false, false, 26), 1)))) {
+                        if (((0 === twig_compare((isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 26, $this->source); })()), 0)) && (0 === twig_compare(twig_get_attribute($this->env, $this->source, $context["image"], "position", [], "any", false, false, false, 26), "thumbnail")))) {
                             // line 27
                             echo "                                                <div class=\"carousel-item active\">
                                                     <div class=\"sizeImgCarousel d-flex justify-content-center\">
@@ -155,7 +155,7 @@ class __TwigTemplate_abd8da362aed980128d7d9801630b1113d3593aab4385f2e8f7da5b24a5
                             $context["i"] = ((isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 32, $this->source); })()) + 1);
                             // line 33
                             echo "                                            ";
-                        } elseif (((0 === twig_compare((isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 33, $this->source); })()), 1)) && (0 === twig_compare(twig_get_attribute($this->env, $this->source, $context["image"], "thumbnail", [], "any", false, false, false, 33), 1)))) {
+                        } elseif (((0 === twig_compare((isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 33, $this->source); })()), 1)) && (0 === twig_compare(twig_get_attribute($this->env, $this->source, $context["image"], "position", [], "any", false, false, false, 33), "thumbnail")))) {
                             // line 34
                             echo "                                                <div class=\"carousel-item\">
                                                     <div class=\"sizeImgCarousel d-flex justify-content-center\">
@@ -298,14 +298,14 @@ class __TwigTemplate_abd8da362aed980128d7d9801630b1113d3593aab4385f2e8f7da5b24a5
                                     <div class=\"carousel-inner p-3\">
                                         {% set i = 0 %}
                                         {% for image in article %}
-                                            {% if ((i == 0) and (image.thumbnail == 1)) %}
+                                            {% if ((i == 0) and (image.position == 'thumbnail')) %}
                                                 <div class=\"carousel-item active\">
                                                     <div class=\"sizeImgCarousel d-flex justify-content-center\">
                                                         <img class=\"img-fluid rounded\" src=\"/uploads/{{ image.image }}\" alt=\"/uploads/{{ image.image }}\">
                                                     </div>
                                                 </div>
                                                 {% set i = i + 1 %}
-                                            {% elseif ((i == 1) and (image.thumbnail == 1)) %}
+                                            {% elseif ((i == 1) and (image.position == 'thumbnail')) %}
                                                 <div class=\"carousel-item\">
                                                     <div class=\"sizeImgCarousel d-flex justify-content-center\">
                                                         <img class=\"img-fluid rounded\" src=\"/uploads/{{ image.image }}\" alt=\"/uploads/{{ image.image }}\">

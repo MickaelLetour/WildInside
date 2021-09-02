@@ -16,6 +16,6 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerCAGTyoB\App_KernelDevDebugContainer([
     'container.build_hash' => 'CAGTyoB',
-    'container.build_id' => '89d345dd',
-    'container.build_time' => 1630437000,
+    'container.build_id' => 'ddc38e87',
+    'container.build_time' => 1630609081,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerCAGTyoB');

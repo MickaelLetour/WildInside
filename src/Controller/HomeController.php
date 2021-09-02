@@ -27,7 +27,7 @@ class HomeController extends AbstractController
      */
     public function index(): Response
     {
-        $banner = $this->entityManager->getRepository(Image::class)->findOneByBanner(1);
+        $banner = $this->entityManager->getRepository(Image::class)->findOneByPosition('banner');
         $lastArticles = [];
         for($i = 1; $i <= 4; $i ++){
             $articles = $this->entityManager->getRepository(Article::class)->findLastOfTheme($i);

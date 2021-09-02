@@ -20,16 +20,15 @@ class ImageRepository extends ServiceEntityRepository
     }
 
     /**
-     * @return Image[] Returns an array of Image objects
+     * @return Image Returns an Image 
      */
-    public function findMoodboard($id, $value, $nb) :array{
+    public function findMoodboard($id, $value) {
         return $this->createQueryBuilder('p')
             ->Where('p.article = :id')
             ->setParameter('id', $id)
             ->AndWhere('p.position = :val')
             ->setParameter('val', $value)
-            ->setMaxResults($nb)
-            ->orderBy('p.id', 'DESC')
+            ->setMaxResults(1)
             ->getQuery()
             ->getResult();
     }
@@ -49,8 +48,8 @@ class ImageRepository extends ServiceEntityRepository
         return $this->createQueryBuilder('p')
             ->Where('p.article = :id')
             ->setParameter('id', $id)
-            ->AndWhere('p.thumbnail = :thumbnail')
-            ->setParameter('thumbnail', 1)
+            ->AndWhere('p.position = :thumbnail')
+            ->setParameter('thumbnail', 'thumbnail')
             ->getQuery()
             ->getResult();
     }

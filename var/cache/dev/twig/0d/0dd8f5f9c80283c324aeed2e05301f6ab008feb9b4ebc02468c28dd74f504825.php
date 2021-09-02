@@ -110,7 +110,7 @@ class __TwigTemplate_f5493354e597a391b80685afa2b70a86c0a86710745ea29d93fc1a44e5c
                     <div class=\"head\">
                         <h1 class=\"text-center\"><span class=\"head-name text-uppercase text-dark\">wild inside</span></h1>
                         <hr class=\"bg-dark\">
-                        <h2 class=\"text-center\"><span class=\"head-function text-dark\"><span>Le soufle primaire de l'art d'intérieur</span><br><span class=\"h4\">Wild Inside c'est l'innatendu dans un univers sage qui vient bousculer les codes</span></span></h2>
+                        <h2 class=\"text-center\"><span class=\"head-function text-dark\"><span>Le soufle primaire de l'art d'intérieur</span></span></h2>
                     </div>
                 </div>
             </header>
@@ -348,7 +348,7 @@ class __TwigTemplate_f5493354e597a391b80685afa2b70a86c0a86710745ea29d93fc1a44e5c
                     <div class=\"head\">
                         <h1 class=\"text-center\"><span class=\"head-name text-uppercase text-dark\">wild inside</span></h1>
                         <hr class=\"bg-dark\">
-                        <h2 class=\"text-center\"><span class=\"head-function text-dark\"><span>Le soufle primaire de l'art d'intérieur</span><br><span class=\"h4\">Wild Inside c'est l'innatendu dans un univers sage qui vient bousculer les codes</span></span></h2>
+                        <h2 class=\"text-center\"><span class=\"head-function text-dark\"><span>Le soufle primaire de l'art d'intérieur</span></span></h2>
                     </div>
                 </div>
             </header>

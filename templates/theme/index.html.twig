@@ -23,14 +23,14 @@
                                     <div class="carousel-inner p-3">
                                         {% set i = 0 %}
                                         {% for image in article %}
-                                            {% if ((i == 0) and (image.thumbnail == 1)) %}
+                                            {% if ((i == 0) and (image.position == 'thumbnail')) %}
                                                 <div class="carousel-item active">
                                                     <div class="sizeImgCarousel d-flex justify-content-center">
                                                         <img class="img-fluid rounded" src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}">
                                                     </div>
                                                 </div>
                                                 {% set i = i + 1 %}
-                                            {% elseif ((i == 1) and (image.thumbnail == 1)) %}
+                                            {% elseif ((i == 1) and (image.position == 'thumbnail')) %}
                                                 <div class="carousel-item">
                                                     <div class="sizeImgCarousel d-flex justify-content-center">
                                                         <img class="img-fluid rounded" src="/uploads/{{ image.image }}" alt="/uploads/{{ image.image }}">

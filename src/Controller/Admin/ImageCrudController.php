@@ -28,15 +28,10 @@ class ImageCrudController extends AbstractCrudController
             AssociationField::new('article','Article'),
             ChoiceField::new('position','Position')
                 ->setChoices([
-                    'Colori' => 'colori',
-                    'Nuancier' => 'nuancier',
-                    'Portrait | Gauche' => 'portraitGauche',
-                    'Paysage | Droite' => 'paysageDroite',
-                    'Paysage | Bas' => 'paysageBas'
-                ]),
-            BooleanField::new('banner', 'Bannière'),
-            BooleanField::new('thumbnail', 'Vignettes'),
-            
+                    'Moodboard' => 'moodboard',
+                    'Vignettes' => 'thumbnail',
+                    'Bannière' => 'banner',
+                ])
         ];
     }
 
