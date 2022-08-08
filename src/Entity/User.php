@@ -13,7 +13,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity(repositoryClass=UserRepository::class) 
+ * @ORM\Entity(repositoryClass=UserRepository::class)
  * @UniqueEntity(fields="email", message="Cet email existe déja")
  */
 class User implements UserInterface

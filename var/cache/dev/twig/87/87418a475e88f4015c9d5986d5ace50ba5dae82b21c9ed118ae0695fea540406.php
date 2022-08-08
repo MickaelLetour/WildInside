@@ -227,6 +227,6 @@ class __TwigTemplate_8d52b47e3e65ac7852496b62cc67ee44f320a3324ae65aa4fc82d22621f
         </div>
     </form>
 </div>
-", "@WebProfiler/Profiler/search.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\search.html.twig");
+", "@WebProfiler/Profiler/search.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\search.html.twig");
     }
 }

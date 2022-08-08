@@ -557,6 +557,6 @@ class __TwigTemplate_a7e6bff2c5f3c1628f7658b9dbfb4c1214b7533d1fe465b247be77a4a2d
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Collector/http_client.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
+", "@WebProfiler/Collector/http_client.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
     }
 }

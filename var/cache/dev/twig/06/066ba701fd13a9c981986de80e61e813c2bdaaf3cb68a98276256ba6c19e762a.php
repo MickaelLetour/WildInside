@@ -121,6 +121,6 @@ class __TwigTemplate_b05a8a67858f458635b720374e54adf0acb94e982bad85e157bbbd185d4
     {% endif %}
     {{ form(form) }}
 
-{% endblock %}", "register/index.html.twig", "C:\\laragon\\www\\client\\WildInside\\templates\\register\\index.html.twig");
+{% endblock %}", "register/index.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\templates\\register\\index.html.twig");
     }
 }

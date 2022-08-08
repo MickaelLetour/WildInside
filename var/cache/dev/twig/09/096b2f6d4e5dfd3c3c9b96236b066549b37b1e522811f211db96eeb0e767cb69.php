@@ -91,6 +91,6 @@ class __TwigTemplate_6407e385084468c455e952004d072e6a6490436aecb847e434ffa65144e
 {% if field.customOptions.get('showName') %}
     {{ field.formattedValue ?? '' }}
 {% endif %}
-", "@EasyAdmin/crud/field/language.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\language.html.twig");
+", "@EasyAdmin/crud/field/language.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\language.html.twig");
     }
 }

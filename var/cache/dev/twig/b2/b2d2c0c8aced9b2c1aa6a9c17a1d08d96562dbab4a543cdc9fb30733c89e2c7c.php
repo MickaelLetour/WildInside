@@ -128,6 +128,6 @@ class __TwigTemplate_284eb8d450179952bc9fd2ce897e41e65a8b8caa988cb849a812d696726
         </div>
     </div>
 </div>
-", "@EasyAdmin/crud/includes/_delete_form.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\includes\\_delete_form.html.twig");
+", "@EasyAdmin/crud/includes/_delete_form.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\includes\\_delete_form.html.twig");
     }
 }

@@ -5,14 +5,17 @@
 {% block content %}
 
     <h1 class="text-center text-uppercase m-5">{{ article.title }}</h1>
-    <div class="justify-content-center">
-        <a class="linkLightbox" href="/uploads/{{ moodboard.0.image }}" data-toggle="lightbox" data-gallery="gallery">
-            <img class="img-fluid rounded" src="/uploads/{{ moodboard.0.image }}" alt="{{ moodboard.0.image }}">
-        </a>
-    </div>
+
     {% if article.content != null %}
         <div class="mt-4">{{ article.content | raw }}</div>
-    {% endif %} 
+    {% endif %}
+    <div class="justify-content-center">
+        {% if moodboard %}
+            <a class="linkLightbox" href="/uploads/{{ moodboard.0.image }}" data-toggle="lightbox" data-gallery="gallery">
+                <img class="img-fluid rounded" src="/uploads/{{ moodboard.0.image }}" alt="{{ moodboard.0.image }}">
+            </a>
+        {% endif %}
+    </div>
 {% endblock %}
 
 {% block javascripts %}

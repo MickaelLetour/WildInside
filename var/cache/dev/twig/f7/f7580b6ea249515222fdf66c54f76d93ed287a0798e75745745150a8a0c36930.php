@@ -104,6 +104,6 @@ class __TwigTemplate_316a8fe36315b8d55b2da7db4a3e4d807ebbfaed9a2c1fa141bc30060f1
 {% if field.customOptions.get('showName') %}
     {{ field.formattedValue.name }}
 {% endif %}
-", "@EasyAdmin/crud/field/currency.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\currency.html.twig");
+", "@EasyAdmin/crud/field/currency.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\currency.html.twig");
     }
 }

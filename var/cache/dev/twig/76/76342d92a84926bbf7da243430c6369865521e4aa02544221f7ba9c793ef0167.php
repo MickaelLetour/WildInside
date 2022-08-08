@@ -235,6 +235,6 @@ class __TwigTemplate_478063d8823450bc765a8e77ad15967d37a442bde81fe2a55638e21bf7c
 {% endblock %}
 
 
-", "security/login.html.twig", "C:\\laragon\\www\\client\\WildInside\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\templates\\security\\login.html.twig");
     }
 }

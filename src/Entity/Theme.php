@@ -25,9 +25,9 @@ class Theme
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity=Article::class, mappedBy="themeId")
+     * @ORM\OneToMany(targetEntity=Article::class, mappedBy="theme")
      */
-    private $articles;
+    protected $articles;
 
     /**
      * @ORM\Column(type="string", length=255)

@@ -126,6 +126,6 @@ class __TwigTemplate_be16ac5114daa795a4870db7f242865ec5f938626d88fb3fc489a52a5d7
             </tbody>
         </table>
     </div>
-</div>", "security/images.html.twig", "C:\\laragon\\www\\client\\WildInside\\templates\\security\\images.html.twig");
+</div>", "security/images.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\templates\\security\\images.html.twig");
     }
 }

@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Entity\Image;
+use App\Entity\Theme;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,7 +16,7 @@ class HomeController extends AbstractController
 
     /**
      * HomeController constructor.
-     * @param $entityManager
+     * @param EntityManagerInterface $entityManager
      */
     public function __construct(EntityManagerInterface $entityManager)
     {
@@ -29,8 +30,14 @@ class HomeController extends AbstractController
     {
         $banner = $this->entityManager->getRepository(Image::class)->findOneByPosition('banner');
         $lastArticles = [];
-        for($i = 1; $i <= 4; $i ++){
-            $articles = $this->entityManager->getRepository(Article::class)->findLastOfTheme($i);
+        $themes = $this->entityManager->getRepository(Theme::class)->findAll();
+        $themesId = [];
+        $i = 1;
+        foreach ($themes as $theme) {
+            $themesId[] = $theme->getId();
+        }
+        foreach ($themesId as $id) {
+            $articles = $this->entityManager->getRepository(Article::class)->findLastOfTheme($id);
             if ($articles != null){
                 foreach($articles as $art){
                     $article = $art;
@@ -41,8 +48,9 @@ class HomeController extends AbstractController
                     ],
                     $article,
                 ];
+                $i++;
             }
-        };
+        }
 
         return $this->render('home/index.html.twig', [
             'lastArticles' => $lastArticles,

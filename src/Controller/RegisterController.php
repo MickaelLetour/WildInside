@@ -28,9 +28,9 @@ class RegisterController extends AbstractController
      * @Route("/register", name="register")
      * @param Request $request
      * @param UserPasswordEncoderInterface $encoder
-     * @return Response
+     * @return Response|null
      */
-    public function index(Request $request, UserPasswordEncoderInterface $encoder): Response
+    public function index(Request $request, UserPasswordEncoderInterface $encoder): ?Response
     {
         $notification = null;
         $user = new User();
@@ -58,9 +58,10 @@ class RegisterController extends AbstractController
             }
         }
 
-        /* return $this->render('register/index.html.twig', [
-            'form' => $form->createView(),
-            'notification' => $notification
-        ]);  */
+//        return $this->render('register/index.html.twig', [
+//            'form' => $form->createView(),
+//            'notification' => $notification
+//        ]);
+        return null;
     }
 }

@@ -20,7 +20,7 @@ class ImageRepository extends ServiceEntityRepository
     }
 
     /**
-     * @return Image Returns an Image 
+     * @return Image Returns an Image
      */
     public function findMoodboard($id, $value) {
         return $this->createQueryBuilder('p')

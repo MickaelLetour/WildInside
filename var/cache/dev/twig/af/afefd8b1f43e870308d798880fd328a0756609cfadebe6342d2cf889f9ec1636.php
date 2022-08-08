@@ -184,6 +184,6 @@ class __TwigTemplate_ba53224bf49ecdf8bd482e326cbc3477541b7add7314d266f5b7e590ec4
         </div>
     </div>
 
-{% endblock %}", "comments/index.html.twig", "C:\\laragon\\www\\client\\WildInside\\templates\\comments\\index.html.twig");
+{% endblock %}", "comments/index.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\templates\\comments\\index.html.twig");
     }
 }

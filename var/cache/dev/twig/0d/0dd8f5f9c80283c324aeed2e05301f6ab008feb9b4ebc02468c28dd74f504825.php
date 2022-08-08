@@ -399,6 +399,6 @@ class __TwigTemplate_f5493354e597a391b80685afa2b70a86c0a86710745ea29d93fc1a44e5c
     </body>
 
 </html>
-", "base.html.twig", "C:\\laragon\\www\\client\\WildInside\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\templates\\base.html.twig");
     }
 }

@@ -155,6 +155,6 @@ class __TwigTemplate_81cf58db0e6873a65cdda4b835950defc6b5f4ac46f95710a5670b0e0c0
         </div>
     </div>
 {% endif %}
-", "@EasyAdmin/crud/field/code_editor.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\code_editor.html.twig");
+", "@EasyAdmin/crud/field/code_editor.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\code_editor.html.twig");
     }
 }

@@ -195,6 +195,6 @@ class __TwigTemplate_6dca4c1d9a96eb9ab7e2cdbe8faac82f8fed59fa5e6915e6414ac05263b
         });
     </script>
 {% endblock javascript_filter_modal %}
-", "@EasyAdmin/crud/includes/_filters_modal.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\includes\\_filters_modal.html.twig");
+", "@EasyAdmin/crud/includes/_filters_modal.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\includes\\_filters_modal.html.twig");
     }
 }

@@ -1,2 +1,2 @@
-rsync -av ./ bs9ot_mickael@bs9ot.ftp.infomaniak.com:~/sites/wild-inside.fr/ --include=public/build --include=public/.htaccess --exclude-from=.gitignore --exclude=".*" --exclude=".env"
-ssh bs9ot_mickael@letourwebdev.com 'cd sites/wild-inside.fr && php bin/console cache:clear'
+rsync -av ./ aalshhs@ssh.cluster029.hosting.ovh.net:~/www/wildInside --include=public/build --include=public/.htaccess --exclude-from=.gitignore --exclude=".*" --exclude=".env"
+ssh aalshhs@ssh.cluster029.hosting.ovh.net 'cd www/wildInside && php bin/console cache:clear'

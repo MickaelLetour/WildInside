@@ -104,6 +104,6 @@ class __TwigTemplate_b253cce517612ce0b0c8295066dc4f7cbb2a1d734f0da84693469bdf5fc
 {% else %}
     {{ field.formattedValue }}
 {% endif %}
-", "@EasyAdmin/crud/field/array.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\array.html.twig");
+", "@EasyAdmin/crud/field/array.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\array.html.twig");
     }
 }

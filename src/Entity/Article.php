@@ -28,7 +28,7 @@ class Article
      * @ORM\ManyToOne(targetEntity=Theme::class, inversedBy="articles")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $theme;
+    protected $theme;
 
     /**
      * @ORM\Column(type="text", nullable=true)

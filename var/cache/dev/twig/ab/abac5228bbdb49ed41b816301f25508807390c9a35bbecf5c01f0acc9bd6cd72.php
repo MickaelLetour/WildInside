@@ -75,6 +75,6 @@ class __TwigTemplate_b9edf11a18eb30d5ecd0d16254ee623805afce8ce19cb579eb1c2e322b1
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
 <a href=\"tel:{{ field.value }}\">{{ field.formattedValue }}</a>
-", "@EasyAdmin/crud/field/telephone.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\telephone.html.twig");
+", "@EasyAdmin/crud/field/telephone.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\telephone.html.twig");
     }
 }

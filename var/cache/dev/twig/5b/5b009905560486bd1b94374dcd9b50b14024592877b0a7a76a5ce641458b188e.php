@@ -409,6 +409,6 @@ class __TwigTemplate_4b60e73c5645a1b9d4ea7233c370771d0227e345925d36732888f37ec0e
 </ul>
 
 {% block main_menu_after %}{% endblock %}
-", "@EasyAdmin/menu.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\menu.html.twig");
+", "@EasyAdmin/menu.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\menu.html.twig");
     }
 }

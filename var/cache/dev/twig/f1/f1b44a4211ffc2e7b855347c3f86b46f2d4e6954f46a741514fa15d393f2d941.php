@@ -168,6 +168,6 @@ class __TwigTemplate_a8351172462f23fb055dd3661eb50044c4869820731df82b6398659b28b
         </div>
     </div>
 {% endblock %}
-", "resetPassword/update.html.twig", "C:\\laragon\\www\\client\\WildInside\\templates\\resetPassword\\update.html.twig");
+", "resetPassword/update.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\templates\\resetPassword\\update.html.twig");
     }
 }

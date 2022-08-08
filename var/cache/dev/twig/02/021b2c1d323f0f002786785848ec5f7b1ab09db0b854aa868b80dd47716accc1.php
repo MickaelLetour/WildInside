@@ -113,6 +113,6 @@ class __TwigTemplate_064412bc3f5440a0d26c3afe4b276541a25ea5b06b9c70e35ceb3a1250c
 
     {{ form_widget(filters_form) }}
 {{ form_end(filters_form) }}
-", "@EasyAdmin/crud/filters.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\filters.html.twig");
+", "@EasyAdmin/crud/filters.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\filters.html.twig");
     }
 }

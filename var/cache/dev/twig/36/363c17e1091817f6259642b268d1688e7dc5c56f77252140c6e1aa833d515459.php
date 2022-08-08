@@ -350,6 +350,6 @@ class __TwigTemplate_abd8da362aed980128d7d9801630b1113d3593aab4385f2e8f7da5b24a5
     </div>
 
 {% endblock %}
-", "theme/index.html.twig", "C:\\laragon\\www\\client\\WildInside\\templates\\theme\\index.html.twig");
+", "theme/index.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\templates\\theme\\index.html.twig");
     }
 }

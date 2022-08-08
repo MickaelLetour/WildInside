@@ -413,6 +413,6 @@ class __TwigTemplate_673c83a20000073c5e121fe12f56306ee00e20426bde49f4a1e5d501e61
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "C:\\laragon\\www\\client\\WildInside\\vendor\\symfony\\debug-bundle\\Resources\\views\\Profiler\\dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\vendor\\symfony\\debug-bundle\\Resources\\views\\Profiler\\dump.html.twig");
     }
 }

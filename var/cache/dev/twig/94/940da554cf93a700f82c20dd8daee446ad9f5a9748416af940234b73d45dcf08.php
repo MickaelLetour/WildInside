@@ -93,30 +93,33 @@ class __TwigTemplate_bf0a959bcf2685fcac4d63cf1c414232d3feb9145843055a0bae983f21a
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 7, $this->source); })()), "title", [], "any", false, false, false, 7), "html", null, true);
         echo "</h1>
     <div class=\"justify-content-center\">
-        <a class=\"linkLightbox\" href=\"/uploads/";
+        ";
         // line 9
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["moodboard"]) || array_key_exists("moodboard", $context) ? $context["moodboard"] : (function () { throw new RuntimeError('Variable "moodboard" does not exist.', 9, $this->source); })()), 0, [], "any", false, false, false, 9), "image", [], "any", false, false, false, 9), "html", null, true);
-        echo "\" data-toggle=\"lightbox\" data-gallery=\"gallery\">
-            <img class=\"img-fluid rounded\" src=\"/uploads/";
-        // line 10
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["moodboard"]) || array_key_exists("moodboard", $context) ? $context["moodboard"] : (function () { throw new RuntimeError('Variable "moodboard" does not exist.', 10, $this->source); })()), 0, [], "any", false, false, false, 10), "image", [], "any", false, false, false, 10), "html", null, true);
-        echo "\" alt=\"";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["moodboard"]) || array_key_exists("moodboard", $context) ? $context["moodboard"] : (function () { throw new RuntimeError('Variable "moodboard" does not exist.', 10, $this->source); })()), 0, [], "any", false, false, false, 10), "image", [], "any", false, false, false, 10), "html", null, true);
-        echo "\">
-        </a>
-    </div>
+        if ((isset($context["moodboard"]) || array_key_exists("moodboard", $context) ? $context["moodboard"] : (function () { throw new RuntimeError('Variable "moodboard" does not exist.', 9, $this->source); })())) {
+            // line 10
+            echo "            <a class=\"linkLightbox\" href=\"/uploads/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["moodboard"]) || array_key_exists("moodboard", $context) ? $context["moodboard"] : (function () { throw new RuntimeError('Variable "moodboard" does not exist.', 10, $this->source); })()), 0, [], "any", false, false, false, 10), "image", [], "any", false, false, false, 10), "html", null, true);
+            echo "\" data-toggle=\"lightbox\" data-gallery=\"gallery\">
+                <img class=\"img-fluid rounded\" src=\"/uploads/";
+            // line 11
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["moodboard"]) || array_key_exists("moodboard", $context) ? $context["moodboard"] : (function () { throw new RuntimeError('Variable "moodboard" does not exist.', 11, $this->source); })()), 0, [], "any", false, false, false, 11), "image", [], "any", false, false, false, 11), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["moodboard"]) || array_key_exists("moodboard", $context) ? $context["moodboard"] : (function () { throw new RuntimeError('Variable "moodboard" does not exist.', 11, $this->source); })()), 0, [], "any", false, false, false, 11), "image", [], "any", false, false, false, 11), "html", null, true);
+            echo "\">
+            </a>
+        ";
+        }
+        // line 14
+        echo "    </div>
     ";
-        // line 13
-        if ((0 !== twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 13, $this->source); })()), "content", [], "any", false, false, false, 13), null))) {
-            // line 14
+        // line 15
+        if ((0 !== twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 15, $this->source); })()), "content", [], "any", false, false, false, 15), null))) {
+            // line 16
             echo "        <div class=\"mt-4\">";
-            echo twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 14, $this->source); })()), "content", [], "any", false, false, false, 14);
+            echo twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 16, $this->source); })()), "content", [], "any", false, false, false, 16);
             echo "</div>
     ";
         }
-        // line 15
-        echo " 
-";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -125,7 +128,7 @@ class __TwigTemplate_bf0a959bcf2685fcac4d63cf1c414232d3feb9145843055a0bae983f21a
 
     }
 
-    // line 18
+    // line 20
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -135,7 +138,7 @@ class __TwigTemplate_bf0a959bcf2685fcac4d63cf1c414232d3feb9145843055a0bae983f21a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 19
+        // line 21
         echo "    <script>
         \$(document).on('click', '[data-toggle=\"lightbox\"]', function(event) {
             event.preventDefault();
@@ -163,7 +166,7 @@ class __TwigTemplate_bf0a959bcf2685fcac4d63cf1c414232d3feb9145843055a0bae983f21a
 
     public function getDebugInfo()
     {
-        return array (  139 => 19,  129 => 18,  118 => 15,  112 => 14,  110 => 13,  102 => 10,  98 => 9,  93 => 7,  90 => 6,  80 => 5,  60 => 3,  37 => 1,);
+        return array (  142 => 21,  132 => 20,  118 => 16,  116 => 15,  113 => 14,  105 => 11,  100 => 10,  98 => 9,  93 => 7,  90 => 6,  80 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -176,13 +179,15 @@ class __TwigTemplate_bf0a959bcf2685fcac4d63cf1c414232d3feb9145843055a0bae983f21a
 
     <h1 class=\"text-center text-uppercase m-5\">{{ article.title }}</h1>
     <div class=\"justify-content-center\">
-        <a class=\"linkLightbox\" href=\"/uploads/{{ moodboard.0.image }}\" data-toggle=\"lightbox\" data-gallery=\"gallery\">
-            <img class=\"img-fluid rounded\" src=\"/uploads/{{ moodboard.0.image }}\" alt=\"{{ moodboard.0.image }}\">
-        </a>
+        {% if moodboard %}
+            <a class=\"linkLightbox\" href=\"/uploads/{{ moodboard.0.image }}\" data-toggle=\"lightbox\" data-gallery=\"gallery\">
+                <img class=\"img-fluid rounded\" src=\"/uploads/{{ moodboard.0.image }}\" alt=\"{{ moodboard.0.image }}\">
+            </a>
+        {% endif %}
     </div>
     {% if article.content != null %}
         <div class=\"mt-4\">{{ article.content | raw }}</div>
-    {% endif %} 
+    {% endif %}
 {% endblock %}
 
 {% block javascripts %}
@@ -194,6 +199,6 @@ class __TwigTemplate_bf0a959bcf2685fcac4d63cf1c414232d3feb9145843055a0bae983f21a
     </script>
 {% endblock %}
 
-", "article/index.html.twig", "C:\\laragon\\www\\client\\WildInside\\templates\\article\\index.html.twig");
+", "article/index.html.twig", "C:\\Users\\micka\\dev\\client\\WildInside\\templates\\article\\index.html.twig");
     }
 }
