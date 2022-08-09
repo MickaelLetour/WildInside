@@ -158,6 +158,10 @@ class FileUploadType extends AbstractType implements DataMapperInterface
                 $value .= \DIRECTORY_SEPARATOR;
             }
 
+            if (0 !== mb_strpos($value, \DIRECTORY_SEPARATOR)) {
+                $value = $this->projectDir.'/'.$value;
+            }
+
             if ('' !== $value && (!is_dir($value) || !is_writable($value))) {
                 throw new InvalidArgumentException(sprintf('Invalid upload directory "%s" it does not exist or is not writable.', $value));
             }

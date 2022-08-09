@@ -1,0 +1,25 @@
+<div class="container">
+    <p>Mes posts instagram</p>
+    <div id="posts" class="row justify-content-center p-3"></div>
+</div>
+
+<script>
+    let postsNode = document.getElementById('posts');
+    fetch('https://feeds.behold.so/oiSkhJ7mLndcROyJ77Es')
+        .then(data => data.json())
+        .then(photos => {
+            photos.forEach(({
+                mediaUrl,       // The image source
+                permalink,      // URL of the Instagram post
+                mediaType,      // 'IMAGE', 'VIDEO', or 'CAROUSEL_ALBUM'
+            }) => {
+                let postNode = document.createElement('div');
+                if (mediaType === 'IMAGE') {
+                    postNode.className = "col-6 col-md-4 col-lg-2 m-2";
+                    postNode.innerHTML = '<img class="img-fluid m-1" src="'+mediaUrl+'">' +
+                        '<a href="'+permalink+'" class="btn btn-primary m-1">Voir le post</a>'
+                }
+                postsNode.appendChild(postNode);
+            });
+        });
+</script>

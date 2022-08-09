@@ -7,8 +7,6 @@ namespace EasyCorp\Bundle\EasyAdminBundle\Event;
  */
 final class BeforeEntityDeletedEvent
 {
-    use StoppableEventTrait;
-
     private $entityInstance;
 
     public function __construct($entityInstance)

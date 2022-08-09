@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
+class ComposerStaticInitf12979a129c8df63e34d1d20246ed2d7
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -188,8 +188,8 @@ class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -497,8 +497,8 @@ class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -622,9 +622,9 @@ class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
-            1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
-            2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            1 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
+            2 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
         'Doctrine\\Bundle\\MigrationsBundle\\' => 
         array (
@@ -659,8 +659,6 @@ class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
     );
 
     public static $classMap = array (
-        'App\\Classes\\Mail' => __DIR__ . '/../..' . '/src/Classes/Mail.php',
-        'App\\Classes\\NavTheme' => __DIR__ . '/../..' . '/src/Classes/NavTheme.php',
         'App\\Controller\\Admin\\ArticleCrudController' => __DIR__ . '/../..' . '/src/Controller/Admin/ArticleCrudController.php',
         'App\\Controller\\Admin\\CommentsCrudController' => __DIR__ . '/../..' . '/src/Controller/Admin/CommentsCrudController.php',
         'App\\Controller\\Admin\\DashboardController' => __DIR__ . '/../..' . '/src/Controller/Admin/DashboardController.php',
@@ -678,6 +676,7 @@ class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
         'App\\Entity\\Article' => __DIR__ . '/../..' . '/src/Entity/Article.php',
         'App\\Entity\\Comments' => __DIR__ . '/../..' . '/src/Entity/Comments.php',
         'App\\Entity\\Image' => __DIR__ . '/../..' . '/src/Entity/Image.php',
+        'App\\Entity\\PostInstagram' => __DIR__ . '/../..' . '/src/Entity/PostInstagram.php',
         'App\\Entity\\Theme' => __DIR__ . '/../..' . '/src/Entity/Theme.php',
         'App\\Entity\\User' => __DIR__ . '/../..' . '/src/Entity/User.php',
         'App\\Form\\CommentsFormType' => __DIR__ . '/../..' . '/src/Form/CommentsFormType.php',
@@ -691,6 +690,10 @@ class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
         'App\\Repository\\ThemeRepository' => __DIR__ . '/../..' . '/src/Repository/ThemeRepository.php',
         'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/src/Repository/UserRepository.php',
         'App\\Security\\LoginFormAuthenticator' => __DIR__ . '/../..' . '/src/Security/LoginFormAuthenticator.php',
+        'App\\Services\\InstagramService' => __DIR__ . '/../..' . '/src/Services/InstagramService.php',
+        'App\\Services\\Mail' => __DIR__ . '/../..' . '/src/Services/Mail.php',
+        'App\\Services\\NavTheme' => __DIR__ . '/../..' . '/src/Services/NavTheme.php',
+        'App\\Twig\\InstagramExtension' => __DIR__ . '/../..' . '/src/Twig/InstagramExtension.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -6092,10 +6095,10 @@ class ComposerStaticInit406857778d5ff429c97f047f4e1f9f60
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit406857778d5ff429c97f047f4e1f9f60::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit406857778d5ff429c97f047f4e1f9f60::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit406857778d5ff429c97f047f4e1f9f60::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit406857778d5ff429c97f047f4e1f9f60::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf12979a129c8df63e34d1d20246ed2d7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf12979a129c8df63e34d1d20246ed2d7::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf12979a129c8df63e34d1d20246ed2d7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitf12979a129c8df63e34d1d20246ed2d7::$classMap;
 
         }, null, ClassLoader::class);
     }

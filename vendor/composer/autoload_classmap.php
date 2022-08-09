@@ -6,8 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Classes\\Mail' => $baseDir . '/src/Classes/Mail.php',
-    'App\\Classes\\NavTheme' => $baseDir . '/src/Classes/NavTheme.php',
     'App\\Controller\\Admin\\ArticleCrudController' => $baseDir . '/src/Controller/Admin/ArticleCrudController.php',
     'App\\Controller\\Admin\\CommentsCrudController' => $baseDir . '/src/Controller/Admin/CommentsCrudController.php',
     'App\\Controller\\Admin\\DashboardController' => $baseDir . '/src/Controller/Admin/DashboardController.php',
@@ -25,6 +23,7 @@ return array(
     'App\\Entity\\Article' => $baseDir . '/src/Entity/Article.php',
     'App\\Entity\\Comments' => $baseDir . '/src/Entity/Comments.php',
     'App\\Entity\\Image' => $baseDir . '/src/Entity/Image.php',
+    'App\\Entity\\PostInstagram' => $baseDir . '/src/Entity/PostInstagram.php',
     'App\\Entity\\Theme' => $baseDir . '/src/Entity/Theme.php',
     'App\\Entity\\User' => $baseDir . '/src/Entity/User.php',
     'App\\Form\\CommentsFormType' => $baseDir . '/src/Form/CommentsFormType.php',
@@ -38,6 +37,10 @@ return array(
     'App\\Repository\\ThemeRepository' => $baseDir . '/src/Repository/ThemeRepository.php',
     'App\\Repository\\UserRepository' => $baseDir . '/src/Repository/UserRepository.php',
     'App\\Security\\LoginFormAuthenticator' => $baseDir . '/src/Security/LoginFormAuthenticator.php',
+    'App\\Services\\InstagramService' => $baseDir . '/src/Services/InstagramService.php',
+    'App\\Services\\Mail' => $baseDir . '/src/Services/Mail.php',
+    'App\\Services\\NavTheme' => $baseDir . '/src/Services/NavTheme.php',
+    'App\\Twig\\InstagramExtension' => $baseDir . '/src/Twig/InstagramExtension.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Collator' => $vendorDir . '/symfony/intl/Resources/stubs/Collator.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
